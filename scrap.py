@@ -13,7 +13,6 @@ for id in listId:
     convertedId = str(id)
     driver.get(base_uri + convertedId)
     content = driver.page_source
-    # soup = BeautifulSoup(content)
     with open('saves/' + convertedId + '.html', 'w') as f:
         f.write(content)
     time.sleep(1)
