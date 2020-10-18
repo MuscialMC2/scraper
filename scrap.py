@@ -4,7 +4,7 @@ import datetime
 import time
 
 driver = webdriver.Chrome("/home/gaetan/dev/utils/chromedriver")
-listId = pd.read_csv("sources/noduplicatesIbdb.csv")
+listId = pd.read_csv("sources/ibdb/noduplicatesIbdb.csv")
 base_uri = "https://www.ibdb.com/broadway-production/"
 now = datetime.datetime.now()
 date_time = now.strftime("%m%d%Y_%H%M%S")
